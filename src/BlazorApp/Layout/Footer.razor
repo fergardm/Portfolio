@@ -56,6 +56,12 @@
                     <img src="@icons.YouTube" alt="YouTube" class="social-icon" />
                 </a>
             }
+            @if (string.IsNullOrWhiteSpace(property.Bluesky) is false)
+            {
+                <a href="https://bsky.app/profile/@(property.Bluesky)" target="_blank" rel="noopener noreferrer">
+                    <img src="@icons.Bluesky" alt="Bluesky" class="social-icon" />
+                </a>
+            }
         </div>
         <p class="small" style="margin-top: 0; color: white;">Created by @property.Name</p>
     }
