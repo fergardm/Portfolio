@@ -1,12 +1,12 @@
 {
-  "description": "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.",
+  "description": "I'm a bioinformatician focused on bioimage analysis of brain tissue using AI trained models. My objective is to unravel mechanisms regarding blood vessels and microglia during brain disease",
   "skills": [
-    "Web design",
-    "User experience",
-    "Inclusive design",
-    "Focus group testing",
-    "Mobile user interfaces",
-    "Graphic design"
+    "Neuroimage",
+    "Big Data",
+    "Multiomics",
+    "Model building and training",
+    "Artificial Intelligence",
+    "Traslational research"
   ],
-  "detailOrQuote": "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all."
+  "detailOrQuote": "I believe big goals must be coupled to ambitious ideas. I hope my main proyect (brAIn) will help researchers in future brain disease studies"
 }
