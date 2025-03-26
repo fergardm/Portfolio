@@ -2,11 +2,11 @@
   "description": "I'm a bioinformatician focused on bioimage analysis of brain tissue using AI trained models. My objective is to unravel mechanisms regarding blood vessels and microglia during brain disease",
   "skills": [
     "Neuroimage",
-    "Big Data",
+   "Big Data",
     "Multiomics",
     "Model building and training",
     "Artificial Intelligence",
-    "Traslational research"
+   "Traslational research"
   ],
   "detailOrQuote": "I believe big goals must be coupled to ambitious ideas. I hope my main proyect (brAIn) will help researchers in future brain disease studies"
 }
