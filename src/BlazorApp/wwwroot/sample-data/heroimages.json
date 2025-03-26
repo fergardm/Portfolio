@@ -13,5 +13,10 @@
     "name": "portfolio",
     "src": "images/bcb_talk.jpeg",
     "alt": "Presentation of my PhD project at the BCB Connection (March 2025)"
+  },
+  {
+    "name": "education",
+    "src": "images/education-svgrepo-com.svg",
+    "alt": "education"
   }
 ]

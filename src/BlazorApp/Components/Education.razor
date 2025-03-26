@@ -1,0 +1,47 @@
+<section class="light" id="education">
+    <h2>Education</h2>
+<div class="education-container">
+    @if (educations is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="education-hero">
+            @if (hero is not null)
+            {
+                <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;animation: 1s ease-out 0s 1 slideInLeft;" 
+                    alt="@(hero.Alt)" />
+            }
+        </div>
+        <div class="container">
+            @foreach (var education in educations)
+            {
+                <div class="box" key="@education.Title">
+                    <a href="@education.Url" target="_blank" rel="noopener noreferrer">
+                        <h3 style="flex-basis: 40px;">@education.Title</h3>
+                    </a>
+                    <p class="small">@education.Description</p>
+                </div>
+            }
+        </div>
+    }
+    </div>
+</section>
+
+@code {
+    [Parameter, EditorRequired]
+    public required HttpClient Http { get; set; }
+
+    [Parameter, EditorRequired]
+    public required HeroImageService HeroImageService { get; set; }
+
+    private List<Education>? educations;
+    private HeroImage? hero;
+
+    protected override async Task OnInitializedAsync()
+    {
+        educations = await Http.GetFromJsonAsync<List<Education>>("sample-data/educations.json");
+        hero = await HeroImageService.GetHeroAsync(img => img.Name is "education");
+    }
+}
