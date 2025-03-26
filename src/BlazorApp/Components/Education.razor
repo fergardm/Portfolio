@@ -1,10 +1,10 @@
-<section class="light" id="education">
-    <h2>
+<section class="info-section" id="education">
+    <div class="info-container left">
+        <h2>
         <img src="images/education-svgrepo-com.svg" class="section-icon"; 
                     alt="education" position="absolute; left:2" style="width: 40px; height: auto;" />
         Education
-    </h2>
-    <div class="info-container">
+        </h2>
     @if (educations is null)
     {
         <p><em>Loading...</em></p>
@@ -25,8 +25,8 @@
         }
     }
     </div>
-    <h2>Languages</h2>
-    <div class="info-container">
+    <div class="info-container right">
+         <h2>Languages</h2>
     @if (languages is null)
     {
         <p><em>Loading...</em></p>

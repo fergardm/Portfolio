@@ -181,6 +181,21 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 45%;
+  padding: 1rem;
+}
+.left {
+  background-color: white; 
+}
+
+.right {
+  background-color: white; 
+}
+
+.info-section {
+  display: flex; 
+  justify-content: space-between;
+  gap: 20px; 
 }
 
 .info-logo {
