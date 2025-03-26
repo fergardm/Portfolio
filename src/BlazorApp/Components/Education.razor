@@ -4,25 +4,49 @@
                     alt="education" position="absolute; left:2" style="width: 40px; height: auto;" />
         Education
     </h2>
-    <div class="education-container">
+    <div class="info-container">
     @if (educations is null)
     {
         <p><em>Loading...</em></p>
     }
     else
     {
-        <div class="info-item">
-            @foreach (var education in educations)
-            {
-                <div class="box" key="@education.Title">
-                    <a>
-                        <h3 style="flex-basis: 40px;">@education.Title</h3>
-                    </a>
-                    <p class="small">@education.Description</p>
+        @foreach (var education in educations)
+        {
+             <div class="info-item">
+                 <a href="@education.Url" target="_blank">
+                     <img src="@education.Logo" alt="Logo" class="info-logo" />
+                </a>
+                <div class="info-text">
+                    <h3 class="info-title">@education.Title</h3>
+                    <p class="info-description">@education.Description</p>
                 </div>
-            }
-        </div>
+            </div>
+        }
     }
+    </div>
+    <h2>Languages</h2>
+    <div class="info-container">
+    @if (languages is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        @foreach (var language in languages)
+        {
+             <div class="info-item">
+                 <a href="@language.Url" target="_blank">
+                     <img src="@language.Logo" alt="Logo" class="info-logo" />
+                </a>
+                <div class="info-text">
+                    <h3 class="info-title">@language.Title</h3>
+                    <p class="info-description">@language.Description</p>
+                </div>
+            </div>
+        }
+    }
+
     </div>
 </section>
 
@@ -34,11 +58,14 @@
     public required HeroImageService HeroImageService { get; set; }
 
     private List<EducationCertifs>? educations;
+    private List<LanguageCertifs>? languages;
+
     private HeroImage? hero;
 
     protected override async Task OnInitializedAsync()
     {
         educations = await Http.GetFromJsonAsync<List<EducationCertifs>>("sample-data/educations.json");
+        languages = await Http.GetFromJsonAsync<List<LanguageCertifs>>("sample-data/languages.json");
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "education");
     }
 }

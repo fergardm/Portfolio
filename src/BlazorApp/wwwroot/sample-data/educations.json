@@ -1,14 +1,20 @@
 [
   {
     "title": "Msc Omics Data Analysis and Systems Biology",
-    "description": "2021 - 2022"
+    "description": "2021 - 2022",
+    "url": "https://biologia.us.es/es/estudios/master-universitario-en-analisis-de-datos-omicos-y-biologia-de-sistemas",
+    "logo": "images/eduicons/U-I-Andalucia.png"
   },
   {
     "title": "Msc Physiology and Neuroscience",
-    "description": "2020 - 2021"
+    "description": "2020 - 2021",
+    "url": "https://master.us.es/mfisneu/",
+    "logo": "images/eduicons/US-marca-principal.png"
   },
   {
     "title": "Biology Degree",
-    "description": "2016 - 2020"
+    "description": "2016 - 2020",
+    "url": "https://biologia.us.es/es/estudios/grado-en-biologia",
+    "logo": "images/eduicons/US-marca-principal.png"
   }
 ]

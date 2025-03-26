@@ -1,18 +1,26 @@
 [
   {
     "title": "Advanced level in English (C1)",
-    "description": "University of Seville"
+    "description": "University of Seville",
+    "logo": "images/eduicons/US-marca-principal.png",
+    "url": "https://institutodeidiomas.us.es/areas-idiomas/ingles/programa-ingles-c1"
   },
   {
-    "title": "Proficiency in English (B2)",
-    "description": "University of Cambridge"
+    "title": "First certificate in English (B2)",
+    "description": "University of Cambridge",
+    "logo": "images/eduicons/university-of-cambridge-2.svg",
+    "url": "https://www.cambridgeenglish.org/exams-and-tests/first/"
   },
   {
     "title": "German (B1)",
-    "description": "Göethe Institut"
+    "description": "Göethe Institut",
+    "logo": "images/eduicons/Logo_GoetheInstitut_2011.svg",
+    "url": "https://www.goethe.de/ins/de/de/prf/prf/gzb1.html"
   },
   {
     "title": "Basic Chinese (A2)",
-    "description": "Chinese Proficiency Test"
+    "description": "Chinese Proficiency Test",
+    "logo": "images/eduicons/logo_hsk.png",
+    "url": "https://www.chinesetest.cn/HSK"
   }
 ]
