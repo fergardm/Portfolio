@@ -20,6 +20,11 @@ div#main {
   display: flex;
   flex-direction: column;
 }
+.section-icon {
+  position: absolute;
+  left: 2; 
+  width: 40px; 
+  height: auto;}
 
 section {
   position: relative;
