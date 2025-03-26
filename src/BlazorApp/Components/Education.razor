@@ -1,6 +1,6 @@
 <section class="light" id="education">
     <h2>Education</h2>
-<div class="education-container">
+    <div class="education-container">
     @if (educations is null)
     {
         <p><em>Loading...</em></p>
@@ -36,12 +36,12 @@
     [Parameter, EditorRequired]
     public required HeroImageService HeroImageService { get; set; }
 
-    private List<Education>? educations;
+    private List<EducationCertifs>? educations;
     private HeroImage? hero;
 
     protected override async Task OnInitializedAsync()
     {
-        educations = await Http.GetFromJsonAsync<List<Education>>("sample-data/educations.json");
+        educations = await Http.GetFromJsonAsync<List<EducationCertifs>>("sample-data/educations.json");
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "education");
     }
 }
