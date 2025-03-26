@@ -1,5 +1,11 @@
 <section class="light" id="education">
-    <h2>Education</h2>
+    <h2>Education >
+        @if (hero is not null)
+            {
+                <img src="@(hero.Src)" class="title-icon"; 
+                    alt="@(hero.Alt)" />
+            }
+    </h2>
     <div class="education-container">
     @if (educations is null)
     {
@@ -7,13 +13,6 @@
     }
     else
     {
-        <div class="education-hero">
-            @if (hero is not null)
-            {
-                <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
-                    alt="@(hero.Alt)" />
-            }
-        </div>
         <div class="container">
             @foreach (var education in educations)
             {
