@@ -39,6 +39,14 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        Blazor.start().then(() => {
+            // Aquí ocultamos la animación de carga
+            document.getElementById('app').style.display = 'none';
+        }).catch(err => {
+            console.error('Error en Blazor:', err);
+        });
+    </script>
 </body>
 
 </html>
