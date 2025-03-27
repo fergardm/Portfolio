@@ -18,9 +18,9 @@
             @foreach (var project in projects)
             {
                 <div class="box" key="@project.Title">
-                    <a href="/brain" rel="noopener noreferrer">
+                    <NavLink href="@project.Url" rel="noopener noreferrer" class="nav-link">
                         <h3 style="flex-basis: 40px;">@project.Title</h3>
-                    </a>
+                    </NavLink>
                     <p class="small">@project.Description</p>
                 </div>
             }
