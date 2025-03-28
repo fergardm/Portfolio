@@ -248,8 +248,9 @@ a:hover {
 
 .page-description {
   text-align: justify;
-  max-width: 80%;
-  margin: 20px auto; 
+  max-width: 60%;
+  margin: 0 auto;
+  margin-left: 120px; /* Ajusta el margen izquierdo */ 
   font-size: 18px;
   line-height: 1.6;
 }

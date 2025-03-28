@@ -1,12 +1,17 @@
 @page "/publications"
 @inject HttpClient Http
+<PageTitle>F.Garrido-Munoz Portfolio</PageTitle>
 
-<h2>Publications</h2>
+<div class="header-container">
+    <h3 class="info-title-page">Publications</h3>
+    <img src="images/publicationlogo.svg" alt="publication Logo" class="page-logo">
+</div>
 
 <NavLink href="/fgmportfolio/#home" class="back-button">
     ⬅ Back
 </NavLink>
 
-<p>You underestimate my power</p>
-
+<div class="page-description">
+    <p>Inside this section I will be posting my latest publications, including communications and posters</p>
+</div>
 <Footer Http=@Http PrimaryColor="#4E567E" SecondaryColor="#D2F1E4" />
