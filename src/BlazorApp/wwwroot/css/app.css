@@ -249,10 +249,12 @@ a:hover {
 .page-description {
   text-align: justify;
   max-width: 60%;
-  margin: 0 auto;
   margin-left: 120px; /* Ajusta el margen izquierdo */ 
+  margin-right: 20px; /* Márgenes derecho para que no quede pegado */
   font-size: 18px;
   line-height: 1.6;
+  word-wrap: break-word; /* Permite que el texto se rompa correctamente */
+  margin-bottom: 20px;
 }
 
 .info-title-page {
@@ -278,6 +280,27 @@ a:hover {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.page-center-img {
+  width: 100%;              
+  height: auto;             
+  display: block;
+  margin-top: 20px;           
+  margin-bottom: 20px;      
+}
+
+.footer-image-container {
+  display: flex;
+  justify-content: center;  /* Centra la imagen horizontalmente */
+  align-items: center;      /* Opcional: Asegura que la imagen esté centrada verticalmente dentro del contenedor */
+  height: 20%;               /* Ajusta la altura del contenedor al final de la página */
+  margin-top: 20px;          /* Añade un pequeño margen encima de la imagen */
+}
+
+.footer-image {
+  max-width: 100%;           /* La imagen se ajustará al 100% de su contenedor */
+  height: auto;              /* Mantiene la proporción de la imagen */
 }
 
 @media screen and (max-width: 420px) {
