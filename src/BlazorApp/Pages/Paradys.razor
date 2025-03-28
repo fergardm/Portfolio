@@ -1,9 +1,17 @@
 @page "/paradys"
+@inject HttpClient Http
 
-<h2>PARADYS</h2>
+<div class="header-container">
+    <h3 class="info-title-page">PARADYS: MultiPARAmetric Bronchopulmonary DYSplasia Prediction</h3>
+    <img src="images/paradyslogo.svg" alt="PARADYS Logo" class="page-logo">
+</div>
 
 <NavLink href="/#home" class="back-button">
     ⬅ Back
 </NavLink>
 
-<p>General Kenobi!</p>
+<div class="page-description">
+    <p>General Kenobi!</p>
+</div>
+
+<Footer Http=@Http PrimaryColor="#4E567E" SecondaryColor="#D2F1E4" />

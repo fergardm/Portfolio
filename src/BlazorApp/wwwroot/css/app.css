@@ -246,6 +246,39 @@ a:hover {
   transform: scale(1.05); 
 }
 
+.page-description {
+  text-align: justify;
+  max-width: 80%;
+  margin: 20px auto; 
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.info-title-page {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 120px; /* Evita que se solape con el botón back */
+  max-width: 60%; /* Permite que el título se distribuya en varias líneas */
+  word-wrap: break-word;
+} 
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.page-logo {
+  height: 100px;
+  width: auto; /* Ajusta el tamaño según necesites */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 @media screen and (max-width: 420px) {
   .container {
     margin: 20px auto;
